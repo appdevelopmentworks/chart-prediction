@@ -13,7 +13,7 @@ import streamlit as st
 st.title("株価の予測")
 st.text("入力例）^N225, AAPL, 7203.T, JPY=X")
 tickerCode = st.text_input('ティッカー:',"^N225")
-period = st.slider("予想期間（日）:",min_value=5,max_value=20)
+period = st.slider("予想期間（日）:",min_value=1,max_value=20, value=5)
 display_period = st.slider("表示期間（日）:",min_value=30,max_value=300,value=300)
 srcBtn = st.button('検索')
 
